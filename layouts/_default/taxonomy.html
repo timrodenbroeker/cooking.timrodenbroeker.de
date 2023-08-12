@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+
+<header>
+  <div class="wrap-wide" style="padding-top: 100px; margin-bottom: 2vw;">
+    <h1 style="line-height: 100%; font-size: calc(16px + 8vw); color: #551a8b;">
+      #{{ .Title }}
+    </h1>
+  </div>
+</header>
+
+    <section id="index-grid">
+    {{ $data := .Data }}
+    {{ range $key, $value := $data.tag }}
+    
+    <div href="{{ .RelPermalink }}" class="post-item m-bot-10 {{ if .Draft }}is-draft{{ end }}" >
+      {{ $title := .Title }} {{ $summary := .Summary }} {{ $image :=.Params.featured_image }} 
+      <a href="{{ .RelPermalink }}">
+        <img class="lazyload" src="/images/placeholder.png" data-src="{{$image}}">
+      </a>
+      <div class="list-posts-item-meta">
+        <h2 class="title m-bot-0">{{ $title }}</h2>
+        <p class="m-bot-0 summary text-small">{{ $summary }}</p>
+        <p class="text-mono m-bot-0" datetime="{{ .PublishDate }}">{{ i18n "publishDate" . }}</p>
+        <p class="text-mono">{{ partial "tags.html" . }}</p>
+      
+        <p class="text-mono"> {{ .Content  | countwords }} words</p>
+         
+     
+</div>
+</div>
+    
+    {{ end }}
+</section>
+
+
+{{ end }}

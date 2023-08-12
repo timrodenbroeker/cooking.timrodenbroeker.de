@@ -1,0 +1,13 @@
+baseURL = 'https://cooking.timrodenbroeker.de'
+languageCode = 'en-us'
+title = 'cooking.timrodenbroeker.de'
+buildDrafts = false
+paginate = 100
+summaryLength = 10
+enableGitInfo = true
+[markup.goldmark.renderer]
+unsafe = true
+[outputs]
+home = [ "HTML", "JSON" ]
+[frontmatter]
+lastmod = [':git', ':fileModTime']

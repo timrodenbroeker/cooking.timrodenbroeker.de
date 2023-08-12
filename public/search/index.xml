@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Search me! on garden.timrodenbroeker.de</title>
+    <link>https://garden.timrodenbroeker.de/search/</link>
+    <description>Recent content in Search me! on garden.timrodenbroeker.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://garden.timrodenbroeker.de/search/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

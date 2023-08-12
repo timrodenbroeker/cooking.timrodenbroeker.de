@@ -1,0 +1,46 @@
+{{ $curr := .Page.RelPermalink }}
+
+
+<div style="height: 40px; width: 100%;"></div>
+<style>
+    #nav-right {
+        margin: 10px; 
+        font-size: 13px; 
+
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-end;
+    }
+
+    #nav-right a {
+        display: block;
+    }
+
+    .nav-pill {
+        border: 1px solid black;
+        color: black;
+        padding: 2px 10px;
+        border-radius: 20px;
+        margin:0;
+    }
+
+    #nav-center {
+        margin: 10px; 
+    }
+</style>
+
+<nav id="main">
+
+
+	<a style="padding: 10px;" class="logo" class="p-left-10" href="/">
+        cooking<span id="logo-part-2">.timrodenbroeker.de</span>
+    </a>
+    <div id="nav-center" class="text-center">
+
+    </div>
+
+    <div id="nav-right" class="text-right">
+      
+    </div>
+
+</nav>

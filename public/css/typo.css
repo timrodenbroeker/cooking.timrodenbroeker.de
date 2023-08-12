@@ -1,0 +1,20 @@
+.lead, blockquote p {
+
+}
+
+#single p.lead {
+    font-family: arial, sans-serif;
+    font-size: 30px;
+}
+.text-mono {
+    font-family: courier, monospace !important;
+    font-size: 12px;
+  }
+.text-small {
+    font-size: 14px;
+}  
+
+.pullquote {
+    /* font-family: times,serif; */
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on garden.timrodenbroeker.de</title>
+    <link>https://garden.timrodenbroeker.de/posts/</link>
+    <description>Recent content in Posts on garden.timrodenbroeker.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jun 2023 10:20:55 +0200</lastBuildDate><atom:link href="https://garden.timrodenbroeker.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>trcc Manifesto</title>
+      <link>https://garden.timrodenbroeker.de/posts/artiststatement/</link>
+      <pubDate>Wed, 28 Jun 2023 10:20:55 +0200</pubDate>
+      
+      <guid>https://garden.timrodenbroeker.de/posts/artiststatement/</guid>
+      <description>summary here</description>
+    </item>
+    
+    <item>
+      <title>Demystify Technology</title>
+      <link>https://garden.timrodenbroeker.de/posts/demystify-technology/</link>
+      <pubDate>Sat, 10 Jun 2023 12:01:15 +0200</pubDate>
+      
+      <guid>https://garden.timrodenbroeker.de/posts/demystify-technology/</guid>
+      <description>summary here</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte zum Digitalen Minimalismus</title>
+      <link>https://garden.timrodenbroeker.de/posts/digitaler-minimalismus/</link>
+      <pubDate>Thu, 08 Jun 2023 09:37:22 +0200</pubDate>
+      
+      <guid>https://garden.timrodenbroeker.de/posts/digitaler-minimalismus/</guid>
+      <description>summary here</description>
+    </item>
+    
+  </channel>
+</rss>

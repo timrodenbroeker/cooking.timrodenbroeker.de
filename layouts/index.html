@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+<style>
+
+
+  #index-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 10px;
+    grid-gap: 10px;
+    display: grid;
+  }
+
+  .post-item {
+    aspect-ratio: 1/1;
+  }
+
+  @media (max-width: 1600px) {
+    #index-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    #index-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    #index-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #index-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #index-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .list-posts-item-meta {
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%;  
+  }
+  
+
+</style>
+
+    {{ $pages := .Site.RegularPages }} {{ $paginator := .Paginate ($pages) }}
+
+        <div id="index-grid">
+
+      {{ range (where .Site.RegularPages "Type" "in" "posts") }}
+     
+      <a href="{{ .RelPermalink }}" class="post-item m-bot-10" style="position: relative; background: {{.Params.Bg}};">
+        {{ $title := .Title }} {{ $summary := .Summary }} {{ $image :=.Params.featured_image }} 
+        <div href="{{ .RelPermalink }}">
+          <img src="{{$image}}">
+        </div>
+        <div>
+        <h2 style="font-size: 20px; font-weight: normal; text-align: center;" class="m-bot-0">{{ $title }}</h2>
+      </div>
+    </a>
+        {{ end }}
+      </div>
+ 
+    {{ end }}
+  
